@@ -1,12 +1,25 @@
-var lbcomum = document.getElementById('lbcomum');
+var prio = document.getElementById('prio');
+var seq = document.getElementById('seq');
+var conta = 0;
+
 
 function comumClick(){
-  lbcomum.innerHTML = 'C'
+  prio.innerHTML = "C";
+  conta += 1;
+  seq.innerHTML = conta;
+ };
+
+function rapidoClick(){
+  prio.innerHTML = "R"
+  conta += 1;
+  seq.innerHTML = conta;
 };
 
-function rapidoClick(){};
-
-function prioritarioClick(){};
+function prioritarioClick(){
+  prio.innerHTML = "P"
+  conta += 1;
+  seq.innerHTML = conta;
+};
 
 function caixa1lick(){};
 
